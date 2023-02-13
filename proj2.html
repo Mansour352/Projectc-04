@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فروشگاه</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./proj2.js">
     <!-- Font Awsome cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,8 @@
         </div>
     </section>
 
-    <div class="sidenav">
+    <div id="sidenav">
+        
         <nav>
            <ul>
             <li><a href="#">Home</a></li>
@@ -37,6 +39,43 @@
            </ul> 
         </nav>
     </div>
-    
+
+    <div id="menubtn">
+        <img src="./logo/align11.png" id="menu">
+    <div>
+
+        <!-- Features -->
+
+        <section id="feature">
+            <div class="title-text">
+                <p>Features</p>
+                <h1>Why Choose Us</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Experienced Staff</h1>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Script code is Here -->
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var menu = document.getElementById("menu")
+    var sidenav = document.getElementById("sidenav")
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right == "-200px"){
+            sidenav.style.right = "0"
+            menu.src = "./logo/close.png";
+        }
+        else{
+            sidenav.style.right = "-200px"
+            menu.src = "./logo/align11.png";
+        }
+    }
+</script>
+   
 </body>
 </html>
