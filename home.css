@@ -74,18 +74,37 @@ header nav .nav-left .register-login-btn a{
 
 .slider .slides .item span {
     position: absolute;
+    right: 10%;
+    top: 40%;
+    font-size: 1.5em;
+    color: #222;
 }
 
 .slider .slides .active {
     display: block;
     
+    
 }
 
 .slider .buttons {
     position: absolute;
+    bottom: 30px;
+    left: 40px;
+    z-index: 1;
 }
 
 .slider .buttons i {
-
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
+.slider .buttons i:hover {
+    color: rgba(255,255,255, .4);
+}
+
+img {
+    width: 100%;
+}
+
+animate__backInRight
