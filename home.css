@@ -1,110 +1,37 @@
-header {
-    font-size: 1em;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background: linear-gradient(rgba(0,0,0.2,0.2),#001029), url(./logo/001.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
 }
 
-/* <!-- navigation section --!> */
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
-    font-size: 1em;
-}
-
-header nav .nav-right {
-    display: flex;
-    align-items: center;
-}
-
-header nav .nav-right a{
-    color: #444;
-    padding: 5px 10px;
-    margin: 0 5px;
-    font-size: 1.1em;
-
-}
-
-header nav .nav-left {
-    
-}
-
-header nav .nav-left .register-login-btn{
-    border: 1px solid #666;
-    padding: 5px 5px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-header nav .nav-left .register-login-btn i{
-    margin: 7px;
-    color: #444;
-    font-size: 1.1em;
-    
-}
-
-header nav .nav-left .register-login-btn a{
-    color: #444;
-    margin: 0 10px;
-    font-size: .9em;
-}
-
-/* <!-- slider section --!> */
-
-.slider {
-    position: relative;
-    font-size: 1em;
-}
-
-.slider .slides {
-
-}
-
-.slider .slides .item {
-    position: relative;
-    display: none;
-}
-
-.slider .slides .item img {
-    
-}
-
-.slider .slides .item span {
+.logo {
+    width: 150px;
     position: absolute;
-    right: 10%;
-    top: 40%;
-    font-size: 1.5em;
-    color: #222;
+    top: 5%;
+    left: 6%;
+
 }
 
-.slider .slides .active {
-    display: block;
+.banner-text {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 180px;
     
-    
+}
+.banner-text h1 {
+    font-size: 130px;
+    font-family: 'Noto Serif', serif;
+
 }
 
-.slider .buttons {
-    position: absolute;
-    bottom: 30px;
-    left: 40px;
-    z-index: 1;
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
 }
-
-.slider .buttons i {
-    color: white;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.slider .buttons i:hover {
-    color: rgba(255,255,255, .4);
-}
-
-img {
-    width: 100%;
-}
-
-animate__backInRight
