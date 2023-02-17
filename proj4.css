@@ -13,7 +13,7 @@ header {
     background-color: #f0f0f0;
     width: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 0;
     display: flex;
     justify-content: space-between;
     padding: 10px 200px;
@@ -25,7 +25,9 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
-
+}
+.navigation{
+    margin-top: .5em;
 }
 .navigation a{
     color:#3a6cf4;
@@ -119,6 +121,7 @@ header {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .card {
@@ -265,4 +268,35 @@ header {
     color: #5a7ee1;
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Scroll Bar */
+
+.scrollbar {
+    background-color: #F5F5F5;
+    float: left;
+    height: 100vh;
+    /* margin-bottom: 25px; */
+    /* margin-right: 22px; */
+    /* margin-top: 40px; */
+    /* width: 65px; */
+    overflow: scroll;
+    border-radius: 20px;
+
+}
+
+.force-overflow {
+    /* min-height: 450px;/ */
+    z-index: 5;
+
+}
+#style-1::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+    z-index: 5;
+
+}
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #0a49f6;
+    z-index: 5;
 }
